@@ -36,6 +36,7 @@ require 'includes/header.php'; ?><div class="head">
                     <td><?= htmlspecialchars($t['responsavel']) ?></td>
                     <td><?= $t['prioridade'] ?></td>
                     <td><?= $t['status'] ?></td>
+                    <a class="btn red" href="excluir.php?id=<?= $t['id'] ?>" onclick="return confirm('Tem certeza que deseja excluir esta tarefa?')">Excluir</a>
                 </tr><?php endforeach; ?>
         </table>
     </div>
