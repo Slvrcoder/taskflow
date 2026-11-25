@@ -30,5 +30,6 @@ $q = $pdo->prepare('INSERT INTO tarefas(titulo,descricao,responsavel,categoria,p
 $q->execute($d);
 
 header('Location: index.php');
+
 exit;
 ?>
